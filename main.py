@@ -11,5 +11,5 @@ for num in range(8):
         contents = letter.read()
     name = name_list[num].strip()
     contents = contents.replace("[name]", name)
-    with open(f"Output/ReadyToSend/Letter_For_{name}", "w")as new_letter:
+    with open(f"Output/ReadyToSend/Letter_For_{name}.txt", "w")as new_letter:
         new_letter.write(contents)
